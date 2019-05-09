@@ -1,0 +1,119 @@
+<head>
+<title>Æsthetic Writer</title>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<script src="https://zeptojs.com/zepto.js"></script>
+<style>
+body {
+	padding: 0;
+	margin: 0;
+	
+	/*background-image: url(seigaiha.png);
+	background-repeat: repeat;*/
+	
+	background-image: url(bg1.jpg);
+	background-size: cover;
+	
+	font-size: 150%;
+	font-family: "Inconsolata", monospace;
+}
+
+#flex {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+#wrapper { 
+	overflow: auto;
+	padding: 1em;
+	
+	color: #eee;
+	outline: none;
+	width: 50vw;
+	height: 80vh;
+}
+
+#shell { /* just the black border around its child */
+	background-color: rgba(16,16,16,0.7);
+	padding: 1em 0;
+}
+
+form { margin: 0; }
+
+a, a:visited {
+	color: rgb(229, 193, 56);
+}
+::selection {
+	background-color: rgba(229, 193, 56, 0.7);
+}
+
+/ * -- Pretty scrollbar -- */
+
+/* Webkit version */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(229, 193, 56);
+}
+
+/* Firefox version */
+#wrapper {
+	scrollbar-width: thin;
+	scrollbar-color: rgb(229, 193, 56) rgb(0,0,0,0);
+}
+
+
+</style>
+</head>
+
+<body>
+<div id="flex">
+<div id="shell">
+<div id="wrapper">
+=== Æsthetic Writer ===<br/>
+<br/>
+- The file you're working on is automatically saved every time you hit the return key.<br/>
+- Refresh the page to return to the index.<br/>
+- You can only edit .txt and .md files.<br/>
+<br>
+- Use this program at your own risk!<br/>
+- Powered by PHP, Zepto.
+- Held together with duct tape and shoelaces.<br/>
+<br>
+</div>
+</div>
+</div>
+</body>
+
+<script>
+var current_file = "index";
+var $wrapper = document.getElementById("wrapper");
+
+// Load index -- append content
+$.get("writer.php?file=" + current_file, function (html) {
+	$wrapper.innerHTML += html;
+})
+
+// Load a file -- replace content, enable content editing and autosave
+function load_page(file) {
+	current_file = file;
+	$.get("writer.php?file=" + current_file, function (html) {
+		$wrapper.innerHTML = html;
+		$wrapper.setAttribute("contenteditable", true);
+		window.addEventListener('keypress', save_on_enter);
+	})
+}
+
+function save_on_enter(e) {
+	if (e.keyCode == 13) {
+		var data = {"filename": current_file, "text": $wrapper.innerText };
+		console.log(data);
+		$.post("writer.php", data);
+	}
+}
+</script>
