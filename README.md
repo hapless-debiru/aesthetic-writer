@@ -2,6 +2,8 @@
 
 Trying to make a distraction-free prose editor with emphasis on aesthetics. The design is inspired by those pimped up screenshots over at [r/unixporn](https://www.reddit.com/r/unixporn).
 
+![Screenshot](https://i.imgur.com/ugJrnvx.jpg)
+
 Limitations (rather than features)
 ----------------------------------
 
@@ -18,4 +20,4 @@ The ones marked as "TODO" are actual issues, the rest can be chalked up to the e
 Changelog
 ---------
 
-- May 9, 2019: modified CSS to make Firefox happy, added a [stock background](https://commons.wikimedia.org/wiki/File:Marco_Ricci,_and_Sebastiano_Ricci_-_Landscape_with_Classical_Ruins_and_Figures_-_70.PA.33_-_J._Paul_Getty_Museum.jpg).
+- May 9, 2019: modified CSS to make Firefox happy, added a [stock background](https://commons.wikimedia.org/wiki/File:Marco_Ricci,_and_Sebastiano_Ricci_-_Landscape_with_Classical_Ruins_and_Figures_-_70.PA.33_-_J._Paul_Getty_Museum.jpg), added a screenshot to the readme.
