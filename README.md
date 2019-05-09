@@ -12,5 +12,4 @@ The ones marked as "TODO" are actual issues, the rest can be chalked up to the e
 - TODO: it could be useful to include a second panel that can be opened and closed, as it could be used to keep notes handy.
 - TODO: navigation is clunky, I should look into adding keyboard shortcuts.
 - TODO: The back-end is written in PHP for now, ideally it will be rewritten in Node or something.
-- ~~TODO: For now it only works on Chrome, and doesn't render as intended on Firefox.~~
-	- Fixed in the first code commit, talk about efficient!
+- TODO: For now it only works on Chrome, and doesn't render as intended on Firefox.
