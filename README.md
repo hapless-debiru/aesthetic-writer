@@ -1,8 +1,8 @@
-# Aesthetic Writer
+# Æsthetic Writer
 
-Trying to make a distraction-free prose editor with emphasis on aesthetics. The design is inspired by those pimped up screenshots over at [r/unixporn](https://www.reddit.com/r/unixporn).
+Trying to make a distraction-free prose editor with an emphasis on aesthetics. The design is inspired by those pimped up screenshots over at [r/unixporn](https://www.reddit.com/r/unixporn).
 
-![Screenshot](https://i.imgur.com/ugJrnvx.jpg)
+![Screenshot](https://i.imgur.com/g7mpXHW.jpg)
 
 Limitations (rather than features)
 ----------------------------------
