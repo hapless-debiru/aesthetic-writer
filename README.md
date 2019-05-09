@@ -1,6 +1,6 @@
 # Aesthetic Writer
 
-Trying to make a distraction-free prose editor with emphasis on aesthetics. The design is inspired by those pimped up screenshots over at [r/unixporn](https://www.reddit.com/r/unixpor).
+Trying to make a distraction-free prose editor with emphasis on aesthetics. The design is inspired by those pimped up screenshots over at [r/unixporn](https://www.reddit.com/r/unixporn).
 
 Limitations (rather than features)
 ----------------------------------
@@ -14,3 +14,8 @@ The ones marked as "TODO" are actual issues, the rest can be chalked up to the e
 - TODO: The back-end is written in PHP for now, ideally it will be rewritten in Node or something.
 - ~~TODO: For now it only works on Chrome, and doesn't render as intended on Firefox.~~
 	- Fixed in the first code commit, talk about efficient!
+
+Changelog
+---------
+
+- May 9, 2019: modified CSS to make Firefox happy, added a [stock background](https://commons.wikimedia.org/wiki/File:Marco_Ricci,_and_Sebastiano_Ricci_-_Landscape_with_Classical_Ruins_and_Figures_-_70.PA.33_-_J._Paul_Getty_Museum.jpg).
